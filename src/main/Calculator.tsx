@@ -12,6 +12,8 @@ export default function Calculator(){
 
     const clearMemory = () => {
         setDisplayValue('0')
+        setValues([0,0])
+        setCurrent(0)
     }
 
     const Operation = (operation:any) => {
@@ -59,6 +61,8 @@ export default function Calculator(){
             setValues(valores)
         }
     }
+
+    console.log(values)
 
 
     return(
